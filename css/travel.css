@@ -1,0 +1,147 @@
+body {
+    background-color: #F0C499;
+    font-family: Nunito, sans-serif;
+}
+
+
+.text, .lead {
+    color: #3c2814;
+    font-family: Nunito, sans-serif;
+}
+
+
+main {
+    position: absolute;
+    top: 10%;
+    right: 1%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    height: 100vh;
+    width: 100vw;
+}
+
+.lead {
+    font-size: 2em;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    max-height: 50px;
+    font-weight: 600;
+}
+
+.text {
+    font-size: 1.3em;
+    max-width: 100vw;
+    margin: 0 3%;
+}
+
+.img {
+    height: 100vh;
+    width: 100vw;
+    margin: 20px 0px;
+}
+
+.lead, .text, .img {
+    margin-bottom: 0.8em;
+}
+
+.header1, .text1, .text2, .text3, .img1, .img2, .img3, .header2, .header3 {
+    grid-column: 1/5;
+}
+
+.header1 {
+    grid-row: 1/2;
+    margin-top: 0.5em;
+    font-size: 2.5em;
+}
+
+.header2 {
+    grid-row: 2/3;
+    margin: 1%;
+}
+
+.text1 {
+    grid-row: 3/4;
+}
+
+.img1 {
+    grid-row: 4/5;
+}
+
+.header3 {
+    grid-row: 5/6;
+    margin-top: 0.2em;
+}
+
+.img2 {
+    grid-row: 7/8;
+}
+
+.text2 {
+    grid-row: 6/7;
+}
+
+
+@media screen and (min-width: 850px) {
+    .header1 {
+        margin-top: 5%;
+    }
+    .header2 {
+        margin-bottom: 5%;  
+    }
+    .img {
+        height: 40vh;
+        width: 45vw;
+    }
+    .text1 {
+        grid-row: 3/4;
+        grid-column: 1/3;
+        margin: 5% 0 0 10%;
+    }
+
+    .header3 {
+        margin: 5% 0;
+    }
+
+    .img1 {
+        grid-row: 3/4;
+        grid-column: 3/5;
+        margin: 0% 0 0 5%;
+    }
+
+    .img2 {
+        grid-row:6/7;
+        grid-column: 1/3;
+        margin: 0% 0 0 10%;
+    }
+
+    .text2 {
+        grid-row: 6/7;
+        grid-column: 3/6;
+        margin: 5% 0 0 10%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .img {
+        height: 50vh;
+        width: 45vw;
+    }
+
+    .text {
+        margin-top: 10%;
+        font-size: 1.7em;
+    }
+
+    .header3 {
+        margin: 5%;
+    }
+}
+
+/* fonts */
+@font-face {
+    font-family: Nunito, sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;700&display=swap');
+}
