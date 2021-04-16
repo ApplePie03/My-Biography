@@ -127,9 +127,10 @@ button {
 
     input {
         height: 6vh;
+        font-size: 1.7em;
     }
 
-    ::placeholder, textarea {
+    textarea {
         font-size: 1.7em;
     }
 
